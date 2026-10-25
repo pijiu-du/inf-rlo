@@ -1,1 +1,694 @@
-_ = (lambda __: __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]))); exec(_('==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'))
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+import socket
+import struct
+import hashlib
+import base64
+import asyncio
+import aiohttp
+import logging
+import ipaddress
+import subprocess
+from aiohttp import web
+
+# 环境变量
+UUID = os.environ.get('UUID', '7bd180e8-1142-4387-93f5-03e8d750a896')   # 节点UUID
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')    # 哪吒v0填写格式: nezha.xxx.com  哪吒v1填写格式: nezha.xxx.com:8008
+NEZHA_PORT = os.environ.get('NEZHA_PORT', '')        # 哪吒v1请留空，哪吒v0 agent端口
+NEZHA_KEY = os.environ.get('NEZHA_KEY', '')          # 哪吒v0或v1密钥，哪吒面板后台命令里获取
+DOMAIN = os.environ.get('DOMAIN', '')                # 项目分配的域名或反代后的域名,不包含https://前缀,例如: domain.xxx.com
+SUB_PATH = os.environ.get('SUB_PATH', 'sub')         # 节点订阅token
+NAME = os.environ.get('NAME', '')                    # 节点名称
+WSPATH = os.environ.get('WSPATH', UUID[:8])          # 节点路径
+PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000)  # http和ws端口，默认自动优先获取容器分配的端口
+AUTO_ACCESS = os.environ.get('AUTO_ACCESS', '').lower() == 'true' # 自动访问保活,默认关闭,true开启,false关闭,需同时填写DOMAIN变量
+DEBUG = os.environ.get('DEBUG', '').lower() == 'true' # 保持默认,调试使用,true开启调试
+
+# 全局变量
+CurrentDomain = DOMAIN
+CurrentPort = 443
+Tls = 'tls'
+ISP = ''
+
+# dns server
+DNS_SERVERS = ['8.8.4.4', '1.1.1.1']
+BLOCKED_DOMAINS = [
+    'speedtest.net', 'fast.com', 'speedtest.cn', 'speed.cloudflare.com', 'speedof.me',
+    'testmy.net', 'bandwidth.place', 'speed.io', 'librespeed.org', 'speedcheck.org'
+]
+
+# 日志级别
+log_level = logging.DEBUG if DEBUG else logging.INFO
+logging.basicConfig(
+    level=log_level,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+# 禁用访问,连接等日志
+logging.getLogger('aiohttp.access').setLevel(logging.WARNING)
+logging.getLogger('aiohttp.server').setLevel(logging.WARNING)
+logging.getLogger('aiohttp.client').setLevel(logging.WARNING)
+logging.getLogger('aiohttp.internal').setLevel(logging.WARNING)
+logging.getLogger('aiohttp.websocket').setLevel(logging.WARNING)
+
+logger = logging.getLogger(__name__)
+
+def is_port_available(port, host='0.0.0.0'):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        try:
+            s.bind((host, port))
+            return True
+        except OSError:
+            return False
+
+def find_available_port(start_port, max_attempts=100):
+    for port in range(start_port, start_port + max_attempts):
+        if is_port_available(port):
+            return port
+    return None
+
+def is_blocked_domain(host: str) -> bool:
+    if not host:
+        return False
+    host_lower = host.lower()
+    return any(host_lower == blocked or host_lower.endswith('.' + blocked) 
+              for blocked in BLOCKED_DOMAINS)
+
+async def get_isp():
+    global ISP
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get('https://api.ip.sb/geoip', 
+                                 headers={'User-Agent': 'Mozilla/5.0'},
+                                 timeout=3) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    ISP = f"{data.get('country_code', '')}-{data.get('isp', '')}".replace(' ', '_')
+                    return
+    except:
+        pass
+    
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get('http://ip-api.com/json',
+                                 headers={'User-Agent': 'Mozilla/5.0'},
+                                 timeout=3) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    ISP = f"{data.get('countryCode', '')}-{data.get('org', '')}".replace(' ', '_')
+                    return
+    except:
+        pass
+    
+    ISP = 'Unknown'
+
+async def get_ip():
+    global CurrentDomain, Tls, CurrentPort
+    if not DOMAIN or DOMAIN == 'your-domain.com':
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get('https://api-ipv4.ip.sb/ip', timeout=5) as resp:
+                    if resp.status == 200:
+                        ip = await resp.text()
+                        CurrentDomain = ip.strip()
+                        Tls = 'none'
+                        CurrentPort = PORT
+        except Exception as e:
+            logger.error(f'Failed to get IP: {e}')
+            CurrentDomain = 'change-your-domain.com'
+            Tls = 'tls'
+            CurrentPort = 443
+    else:
+        CurrentDomain = DOMAIN
+        Tls = 'tls'
+        CurrentPort = 443
+
+async def resolve_host(host: str) -> str:
+    try:
+        ipaddress.ip_address(host)
+        return host
+    except:
+        pass
+    
+    for dns_server in DNS_SERVERS:
+        try:
+            async with aiohttp.ClientSession() as session:
+                url = f'https://dns.google/resolve?name={host}&type=A'
+                async with session.get(url, timeout=5) as resp:
+                    if resp.status == 200:
+                        data = await resp.json()
+                        if data.get('Status') == 0 and data.get('Answer'):
+                            for answer in data['Answer']:
+                                if answer.get('type') == 1:
+                                    return answer.get('data')
+        except:
+            continue
+    
+    return host  # 如果解析失败，返回原始域名
+
+class ProxyHandler:
+    def __init__(self, uuid: str):
+        self.uuid = uuid
+        self.uuid_bytes = bytes.fromhex(uuid)
+        
+    async def handle_vless(self, websocket, first_msg: bytes) -> bool:
+        """处理VLS协议"""
+        try:
+            if len(first_msg) < 18 or first_msg[0] != 0:
+                return False
+            
+            # 验证UUID
+            if first_msg[1:17] != self.uuid_bytes:
+                return False
+            
+            i = first_msg[17] + 19
+            if i + 3 > len(first_msg):
+                return False
+            
+            port = struct.unpack('!H', first_msg[i:i+2])[0]
+            i += 2
+            atyp = first_msg[i]
+            i += 1
+            
+            # 解析地址
+            host = ''
+            if atyp == 1:  # IPv4
+                if i + 4 > len(first_msg):
+                    return False
+                host = '.'.join(str(b) for b in first_msg[i:i+4])
+                i += 4
+            elif atyp == 2:  # 域名
+                if i >= len(first_msg):
+                    return False
+                host_len = first_msg[i]
+                i += 1
+                if i + host_len > len(first_msg):
+                    return False
+                host = first_msg[i:i+host_len].decode()
+                i += host_len
+            elif atyp == 3:  # IPv6
+                if i + 16 > len(first_msg):
+                    return False
+                host = ':'.join(f'{(first_msg[j] << 8) + first_msg[j+1]:04x}' 
+                              for j in range(i, i+16, 2))
+                i += 16
+            else:
+                return False
+            
+            if is_blocked_domain(host):
+                await websocket.close()
+                return False
+            
+            await websocket.send_bytes(bytes([0, 0]))
+            
+            resolved_host = await resolve_host(host)
+            
+            try:
+                reader, writer = await asyncio.open_connection(resolved_host, port)
+                
+                # 发送剩余数据
+                if i < len(first_msg):
+                    writer.write(first_msg[i:])
+                    await writer.drain()
+                
+                # 双向转发
+                async def forward_ws_to_tcp():
+                    try:
+                        async for msg in websocket:
+                            if msg.type == aiohttp.WSMsgType.BINARY:
+                                writer.write(msg.data)
+                                await writer.drain()
+                    except:
+                        pass
+                    finally:
+                        writer.close()
+                        await writer.wait_closed()
+                
+                async def forward_tcp_to_ws():
+                    try:
+                        while True:
+                            data = await reader.read(4096)
+                            if not data:
+                                break
+                            await websocket.send_bytes(data)
+                    except:
+                        pass
+                
+                await asyncio.gather(
+                    forward_ws_to_tcp(),
+                    forward_tcp_to_ws()
+                )
+                
+            except Exception as e:
+                if DEBUG:
+                    logger.error(f"Connection error: {e}")
+            
+            return True
+            
+        except Exception as e:
+            if DEBUG:
+                logger.error(f"VLESS handler error: {e}")
+            return False
+    
+    async def handle_trojan(self, websocket, first_msg: bytes) -> bool:
+        """处理Tro协议"""
+        try:
+            if len(first_msg) < 58:
+                return False
+            
+            received_hash_bytes = first_msg[:56]
+            
+            # 验证密码 - 支持标准UUID和无短横线UUID
+            hash_obj1 = hashlib.sha224()
+            hash_obj1.update(self.uuid.encode())
+            expected_hash_hex1 = hash_obj1.hexdigest()
+            
+            # 尝试使用标准UUID（带短横线）
+            standard_uuid = UUID
+            hash_obj2 = hashlib.sha224()
+            hash_obj2.update(standard_uuid.encode())
+            expected_hash_hex2 = hash_obj2.hexdigest()
+            
+            # 转换为hex字符串进行比较
+            received_hash_hex = received_hash_bytes.decode('ascii', errors='ignore')
+            
+            # 检查是否匹配任一UUID格式
+            if received_hash_hex != expected_hash_hex1 and received_hash_hex != expected_hash_hex2:
+                return False
+            
+            offset = 56
+            if first_msg[offset:offset+2] == b'\r\n':
+                offset += 2
+            
+            cmd = first_msg[offset]
+            if cmd != 1:
+                return False
+            offset += 1
+            
+            atyp = first_msg[offset]
+            offset += 1
+            
+            # 解析地址
+            host = ''
+            if atyp == 1:  # IPv4
+                host = '.'.join(str(b) for b in first_msg[offset:offset+4])
+                offset += 4
+            elif atyp == 3:  # 域名
+                host_len = first_msg[offset]
+                offset += 1
+                host = first_msg[offset:offset+host_len].decode()
+                offset += host_len
+            elif atyp == 4:  # IPv6
+                host = ':'.join(f'{(first_msg[j] << 8) + first_msg[j+1]:04x}' 
+                              for j in range(offset, offset+16, 2))
+                offset += 16
+            else:
+                return False
+            
+            port = struct.unpack('!H', first_msg[offset:offset+2])[0]
+            offset += 2
+            
+            if first_msg[offset:offset+2] == b'\r\n':
+                offset += 2
+            
+            if is_blocked_domain(host):
+                await websocket.close()
+                return False
+            
+            # 连接目标
+            resolved_host = await resolve_host(host)
+            
+            try:
+                reader, writer = await asyncio.open_connection(resolved_host, port)
+                
+                if offset < len(first_msg):
+                    writer.write(first_msg[offset:])
+                    await writer.drain()
+                
+                async def forward_ws_to_tcp():
+                    try:
+                        async for msg in websocket:
+                            if msg.type == aiohttp.WSMsgType.BINARY:
+                                writer.write(msg.data)
+                                await writer.drain()
+                    except:
+                        pass
+                    finally:
+                        writer.close()
+                        await writer.wait_closed()
+                
+                async def forward_tcp_to_ws():
+                    try:
+                        while True:
+                            data = await reader.read(4096)
+                            if not data:
+                                break
+                            await websocket.send_bytes(data)
+                    except:
+                        pass
+                
+                await asyncio.gather(
+                    forward_ws_to_tcp(),
+                    forward_tcp_to_ws()
+                )
+                
+            except Exception as e:
+                if DEBUG:
+                    logger.error(f"Connection error: {e}")
+            
+            return True
+            
+        except Exception as e:
+            if DEBUG:
+                logger.error(f"Tro handler error: {e}")
+            return False
+    
+    async def handle_shadowsocks(self, websocket, first_msg: bytes) -> bool:
+        """处理ss协议"""
+        try:
+            if len(first_msg) < 7:
+                return False
+            
+            offset = 0
+            atyp = first_msg[offset]
+            offset += 1
+            
+            # 解析地址
+            host = ''
+            if atyp == 1:  # IPv4
+                if offset + 4 > len(first_msg):
+                    return False
+                host = '.'.join(str(b) for b in first_msg[offset:offset+4])
+                offset += 4
+            elif atyp == 3:  # 域名
+                if offset >= len(first_msg):
+                    return False
+                host_len = first_msg[offset]
+                offset += 1
+                if offset + host_len > len(first_msg):
+                    return False
+                host = first_msg[offset:offset+host_len].decode()
+                offset += host_len
+            elif atyp == 4:  # IPv6
+                if offset + 16 > len(first_msg):
+                    return False
+                host = ':'.join(f'{(first_msg[j] << 8) + first_msg[j+1]:04x}' 
+                              for j in range(offset, offset+16, 2))
+                offset += 16
+            else:
+                return False
+            
+            if offset + 2 > len(first_msg):
+                return False
+            port = struct.unpack('!H', first_msg[offset:offset+2])[0]
+            offset += 2
+            
+            if is_blocked_domain(host):
+                await websocket.close()
+                return False
+            
+            # 连接目标
+            resolved_host = await resolve_host(host)
+            
+            try:
+                reader, writer = await asyncio.open_connection(resolved_host, port)
+                
+                if offset < len(first_msg):
+                    writer.write(first_msg[offset:])
+                    await writer.drain()
+                
+                async def forward_ws_to_tcp():
+                    try:
+                        async for msg in websocket:
+                            if msg.type == aiohttp.WSMsgType.BINARY:
+                                writer.write(msg.data)
+                                await writer.drain()
+                    except:
+                        pass
+                    finally:
+                        writer.close()
+                        await writer.wait_closed()
+                
+                async def forward_tcp_to_ws():
+                    try:
+                        while True:
+                            data = await reader.read(4096)
+                            if not data:
+                                break
+                            await websocket.send_bytes(data)
+                    except:
+                        pass
+                
+                await asyncio.gather(
+                    forward_ws_to_tcp(),
+                    forward_tcp_to_ws()
+                )
+                
+            except Exception as e:
+                if DEBUG:
+                    logger.error(f"Connection error: {e}")
+            
+            return True
+            
+        except Exception as e:
+            if DEBUG:
+                logger.error(f"Shadowsocks handler error: {e}")
+            return False
+
+async def websocket_handler(request):
+    ws = web.WebSocketResponse()
+    await ws.prepare(request)
+    CUUID = UUID.replace('-', '')
+    path = request.path
+    
+    if f'/{WSPATH}' not in path:
+        await ws.close()
+        return ws
+    
+    proxy = ProxyHandler(CUUID)
+    
+    try:
+        first_msg = await asyncio.wait_for(ws.receive(), timeout=5)
+        if first_msg.type != aiohttp.WSMsgType.BINARY:
+            await ws.close()
+            return ws
+        
+        msg_data = first_msg.data
+        
+        # 尝试VLS
+        if len(msg_data) > 17 and msg_data[0] == 0:
+            if await proxy.handle_vless(ws, msg_data):
+                return ws
+        
+        # 尝试Tro
+        if len(msg_data) >= 58:
+            if await proxy.handle_trojan(ws, msg_data):
+                return ws
+        
+        # 尝试ss
+        if len(msg_data) > 0 and msg_data[0] in (1, 3, 4):
+            if await proxy.handle_shadowsocks(ws, msg_data):
+                return ws
+        
+        await ws.close()
+        
+    except asyncio.TimeoutError:
+        await ws.close()
+    except Exception as e:
+        if DEBUG:
+            logger.error(f"WebSocket handler error: {e}")
+        await ws.close()
+    
+    return ws
+
+async def http_handler(request):
+    if request.path == '/':
+        try:
+            with open('index.html', 'r', encoding='utf-8') as f:
+                content = f.read()
+            return web.Response(text=content, content_type='text/html')
+        except:
+            return web.Response(text='Hello world!', content_type='text/html')
+    
+    elif request.path == f'/{SUB_PATH}':
+        await get_isp()
+        await get_ip()
+        
+        name_part = f"{NAME}-{ISP}" if NAME else ISP
+        tls_param = 'tls' if Tls == 'tls' else 'none'
+        ss_tls_param = 'tls;' if Tls == 'tls' else ''
+        
+        # 生成配置链接
+        vless_url = f"vless://{UUID}@{CurrentDomain}:{CurrentPort}?encryption=none&security={tls_param}&sni={CurrentDomain}&fp=chrome&type=ws&host={CurrentDomain}&path=%2F{WSPATH}#{name_part}"
+        trojan_url = f"trojan://{UUID}@{CurrentDomain}:{CurrentPort}?security={tls_param}&sni={CurrentDomain}&fp=chrome&type=ws&host={CurrentDomain}&path=%2F{WSPATH}#{name_part}"
+        
+        ss_method_password = base64.b64encode(f"none:{UUID}".encode()).decode()
+        ss_url = f"ss://{ss_method_password}@{CurrentDomain}:{CurrentPort}?plugin=v2ray-plugin;mode%3Dwebsocket;host%3D{CurrentDomain};path%3D%2F{WSPATH};{ss_tls_param}sni%3D{CurrentDomain};skip-cert-verify%3Dtrue;mux%3D0#{name_part}"
+        
+        subscription = f"{vless_url}\n{trojan_url}\n{ss_url}"
+        base64_content = base64.b64encode(subscription.encode()).decode()
+        
+        return web.Response(text=base64_content + '\n', content_type='text/plain')
+    
+    return web.Response(status=404, text='Not Found\n')
+
+def get_download_url():
+    import platform
+    arch = platform.machine()
+    
+    if 'arm' in arch.lower() or 'aarch64' in arch.lower():
+        if not NEZHA_PORT:
+            return 'https://arm64.eooce.com/v1'
+        else:
+            return 'https://arm64.eooce.com/agent'
+    else:
+        if not NEZHA_PORT:
+            return 'https://amd64.eooce.com/v1'
+        else:
+            return 'https://amd64.eooce.com/agent'
+
+async def download_file():
+    if not NEZHA_SERVER and not NEZHA_KEY:
+        return
+    
+    try:
+        url = get_download_url()
+        async with aiohttp.ClientSession() as session:
+            async with session.get(url) as resp:
+                if resp.status == 200:
+                    content = await resp.read()
+                    with open('npm', 'wb') as f:
+                        f.write(content)
+                    os.chmod('npm', 0o755)
+                    logger.info('✅ npm downloaded successfully')
+    except Exception as e:
+        logger.error(f'Download failed: {e}')
+
+async def run_nezha():
+    try:
+        result = subprocess.run(['ps', 'aux'], capture_output=True, text=True)
+        if './npm' in result.stdout and '[n]pm' in result.stdout:
+            logger.info('npm is already running, skip...')
+            return
+    except:
+        pass
+    
+    # 等待文件下载完成
+    await download_file()
+    
+    command = ''
+    tls_ports = ['443', '8443', '2096', '2087', '2083', '2053']
+    if NEZHA_SERVER and NEZHA_PORT and NEZHA_KEY:
+        nezha_tls = '--tls' if NEZHA_PORT in tls_ports else ''
+        command = f'nohup ./npm -s {NEZHA_SERVER}:{NEZHA_PORT} -p {NEZHA_KEY} {nezha_tls} --disable-auto-update --report-delay 4 --skip-conn --skip-procs >/dev/null 2>&1 &'
+    elif NEZHA_SERVER and NEZHA_KEY:
+        if not NEZHA_PORT:
+            port = NEZHA_SERVER.split(':')[-1] if ':' in NEZHA_SERVER else ''
+            nz_tls = 'true' if port in tls_ports else 'false'
+            config = f"""client_secret: {NEZHA_KEY}
+debug: false
+disable_auto_update: true
+disable_command_execute: false
+disable_force_update: true
+disable_nat: false
+disable_send_query: false
+gpu: false
+insecure_tls: true
+ip_report_period: 1800
+report_delay: 4
+server: {NEZHA_SERVER}
+skip_connection_count: true
+skip_procs_count: true
+temperature: false
+tls: {nz_tls}
+use_gitee_to_upgrade: false
+use_ipv6_country_code: false
+uuid: {UUID}"""
+
+            with open('config.yaml', 'w') as f:
+                f.write(config)
+
+        command = f'nohup ./npm -c config.yaml >/dev/null 2>&1 &'
+    else:
+        return
+    
+    try:
+        subprocess.Popen(command, shell=True, executable='/bin/bash')
+        logger.info('✅ nz started successfully')
+    except Exception as e:
+        logger.error(f'Error running nz: {e}')
+
+async def add_access_task():
+    if not AUTO_ACCESS or not DOMAIN:
+        return
+    
+    full_url = f"https://{DOMAIN}/{SUB_PATH}"
+    try:
+        async with aiohttp.ClientSession() as session:
+            await session.post("https://oooo.serv00.net/add-url",
+                             json={"url": full_url},
+                             headers={'Content-Type': 'application/json'})
+        logger.info('Automatic Access Task added successfully')
+    except:
+        pass
+
+def cleanup_files():
+    for file in ['npm', 'config.yaml']:
+        try:
+            if os.path.exists(file):
+                os.remove(file)
+        except:
+            pass
+
+async def main():
+    actual_port = PORT
+    
+    # 检查端口是否可用，如果不可用则查找可用端口
+    if not is_port_available(actual_port):
+        logger.warning(f"Port {actual_port} is already in use, finding available port...")
+        new_port = find_available_port(actual_port + 1)
+        if new_port:
+            actual_port = new_port
+            logger.info(f"Using port {actual_port} instead of {PORT}")
+        else:
+            logger.error("No available ports found")
+            sys.exit(1)
+    
+    app = web.Application()
+    
+    # 路由
+    app.router.add_get('/', http_handler)
+    app.router.add_get(f'/{SUB_PATH}', http_handler)
+    app.router.add_get(f'/{WSPATH}', websocket_handler)
+    
+    # 启动服务
+    runner = web.AppRunner(app)
+    await runner.setup()
+    site = web.TCPSite(runner, '0.0.0.0', actual_port)
+    await site.start()
+    logger.info(f"✅ server is running on port {actual_port}")
+    asyncio.create_task(run_nezha())
+    async def delayed_cleanup():
+        await asyncio.sleep(180)
+        cleanup_files()
+    
+    asyncio.create_task(delayed_cleanup())
+    
+    await add_access_task()
+    
+    try:
+        await asyncio.Future()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        await runner.cleanup()
+
+if __name__ == '__main__':
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\nServer stopped by user")
+        cleanup_files()
